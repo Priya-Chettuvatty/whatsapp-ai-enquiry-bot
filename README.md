@@ -17,8 +17,10 @@ pip install flask twilio
 
 --Run Application
 python app.py
+
 ngrok http 5000
 
 Connect Twilio
 Use Twilio Sandbox for WhatsApp
+
 Set webhook URL (using ngrok)
