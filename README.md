@@ -6,11 +6,17 @@ It automatically responds to user queries, collects lead details, and guides use
 
 ---Workflow
 
-1. User sends message on WhatsApp  
-2. Twilio Sandbox receives message  
-3. Webhook sends request to Flask app  
-4. Bot processes message  
-5. Bot sends reply based on user input
+User sends WhatsApp message
+        ↓
+Twilio Sandbox receives message
+        ↓
+Flask server processes request
+        ↓
+Python chatbot logic checks user message
+        ↓
+Bot generates response
+        ↓
+Twilio sends reply back to WhatsApp user
    
 ---Install Requirements
 pip install flask twilio
